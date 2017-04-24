@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Nieg.GitHub.io
+email: xp_Fei@163.com
 description: > # this means to ignore newlines until "baseurl:"
  This is MY blog.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -22,6 +23,7 @@ twitter_username: NiegFei
 github_username:  Nieg
 google_analytics: 
 show_downloads: true
+permalink: /:categories/:year/:month/:day/:title 
 # Build settings
 markdown: kramdown
 theme: minima
