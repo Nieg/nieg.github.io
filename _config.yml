@@ -13,23 +13,49 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Nieg.GitHub.io
+title: Nieg
+tagline: 'A Jekyll theme'
 email: xp_Fei@163.com
 description: > # this means to ignore newlines until "baseurl:"
  This is MY blog.
 baseurl: "" # the subpath of your site, e.g. /blog
+#baseurl: /
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+author:
+  name: Nieg
+  email: xp_fei@163.com
+  github: Nieg
+#  twitter: NiegFei
+#  pinterest: asd123
+#  linkedin: asd123
+#  bio: Your stylish, minimalist theme!
+  email_md5: 511731333fbcc6f3cf5d2ac454546bb5
+
 twitter_username: NiegFei
 github_username:  Nieg
 google_analytics: 
 show_downloads: true
 permalink: /:categories/:year/:month/:day/:title 
+# permalink: pretty
+
 # Build settings
+paginate_path: "page/:num"
+
 markdown: kramdown
-theme: minima
-gems:
+highlighter: pygments
+# theme: minima
+paginate: 5
+rss_path: feed.xml
+categories_path: categories
+tags_path: tags
+
+plugins:
   - jekyll-mentions
   - jekyll-feed
+
 exclude:
   - Gemfile
   - Gemfile.lock
+  - README.md
+  - Index.md
