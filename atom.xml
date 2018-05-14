@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Nieg</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-05-14T14:10:30.201Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Nieg</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>重启博客计划</title>
+    <link href="http://yoursite.com/posts/2018/05/13/blog-restart/"/>
+    <id>http://yoursite.com/posts/2018/05/13/blog-restart/</id>
+    <published>2018-05-13T03:43:56.000Z</published>
+    <updated>2018-05-14T14:10:30.201Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;摘要&quot;&gt;&lt;a href=&quot;#摘要&quot; class=&quot;headerlink&quot; title=&quot;摘要&quot;&gt;&lt;/a&gt;摘要&lt;/h2&gt;&lt;p&gt;搭建完博客的第一件事，果然还是要得无病呻吟一番啊。&lt;/p&gt;
+&lt;h2 id=&quot;岁月如梭&quot;&gt;&lt;a href=&quot;#岁月如梭&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="posts" scheme="http://yoursite.com/categories/posts/"/>
+    
+    
+      <category term="helloworld" scheme="http://yoursite.com/tags/helloworld/"/>
+    
+  </entry>
+  
+</feed>
