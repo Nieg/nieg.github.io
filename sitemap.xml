@@ -1,1 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>http://nieg.github.io/about/index.html</loc><lastmod>2018-05-26T01:12:37.777Z</lastmod></url><url><loc>http://nieg.github.io/posts/2018/05/13/blog-restart/</loc><lastmod>2018-05-22T16:00:52.158Z</lastmod></url><url><loc>http://nieg.github.io/tags/index.html</loc><lastmod>2018-05-13T12:44:27.478Z</lastmod></url><url><loc>http://nieg.github.io/categories/index.html</loc><lastmod>2018-05-13T12:44:23.499Z</lastmod></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://nieg.github.io/about/index.html</loc>
+    
+    <lastmod>2018-06-09T16:41:41.432Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://nieg.github.io/posts/2018/05/13/blog-restart/</loc>
+    
+    <lastmod>2018-05-22T16:00:52.158Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://nieg.github.io/tags/index.html</loc>
+    
+    <lastmod>2018-05-13T12:44:27.478Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://nieg.github.io/categories/index.html</loc>
+    
+    <lastmod>2018-05-13T12:44:23.499Z</lastmod>
+    
+  </url>
+  
+</urlset>
