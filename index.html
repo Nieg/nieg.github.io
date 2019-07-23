@@ -15,7 +15,7 @@
 
 
 <html class="theme-next mist use-motion" lang="zh-CN">
-<head><meta name="generator" content="Hexo 3.8.0">
+<head><meta name="generator" content="Hexo 3.9.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
@@ -32,35 +32,31 @@
 
 
 
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png?v=7.2.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png?v=7.2.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=7.2.0" color="#222">
 
 
 
 
 
 
+<link rel="stylesheet" href="/css/main.css?v=7.2.0">
 
 
 
 
 
 
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
 
-
-<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2">
-
-<link rel="stylesheet" href="/css/main.css?v=7.0.0">
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png?v=7.0.0">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32.png?v=7.0.0">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16.png?v=7.0.0">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=7.0.0" color="#222">
 
 
 
@@ -73,11 +69,14 @@
   var CONFIG = {
     root: '/',
     scheme: 'Mist',
-    version: '7.0.0',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    version: '7.2.0',
+    sidebar: {"position":"right","display":"post","offset":12,"onmobile":false,"b2t":false,"scrollpercent":false},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
     fancybox: false,
-    fastclick: false,
+    mediumzoom: false,
     lazyload: false,
+    pangu: false,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
@@ -86,15 +85,14 @@
       indexName: '',
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    translation: {
+      copy_button: '复制',
+      copy_success: '复制成功',
+      copy_failure: '复制失败'
     }
   };
 </script>
-
-
-  
-
-
-
 
   <meta property="og:type" content="website">
 <meta property="og:title" content="Nieg">
@@ -110,7 +108,8 @@
 
 
 
-
+  
+  
   <link rel="canonical" href="http://nieg.github.io/">
 
 
@@ -121,6 +120,7 @@
   };
 </script>
 
+  
   <title>Nieg</title>
   
 
@@ -169,13 +169,13 @@
     
   
 
-  <div class="container sidebar-position-left 
+  <div class="container sidebar-position-right 
   page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta">
+  <div class="site-meta custom-logo">
     
 
     <div class="custom-logo-site-title">
@@ -212,7 +212,6 @@
 
     
     
-    
       
     
 
@@ -227,7 +226,6 @@
           
           <li class="menu-item menu-item-archives">
 
-    
     
     
       
@@ -246,7 +244,6 @@
 
     
     
-    
       
     
 
@@ -263,7 +260,6 @@
 
     
     
-    
       
     
 
@@ -278,7 +274,6 @@
           
           <li class="menu-item menu-item-categories">
 
-    
     
     
       
@@ -302,10 +297,6 @@
 
   
 </nav>
-
-
-
-  
 
 
 
@@ -365,13 +356,13 @@
         
 
         <div class="post-meta">
-          <span class="post-time">
 
-            
-            
-            
+          
+          
+          
 
-            
+          
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-calendar-o"></i>
               </span>
@@ -384,16 +375,14 @@
               
 
               <time title="创建时间：2018-05-13 11:43:56" itemprop="dateCreated datePublished" datetime="2018-05-13T11:43:56+08:00">2018-05-13</time>
+            </span>
+          
+
+          
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
+              <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
@@ -401,15 +390,12 @@
                   <span class="post-meta-item-text">更新于</span>
                 
                 <time title="修改时间：2018-05-23 00:00:52" itemprop="dateModified" datetime="2018-05-23T00:00:52+08:00">2018-05-23</time>
-              
+              </span>
             
-          </span>
+          
 
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="fa fa-folder-o"></i>
               </span>
@@ -433,6 +419,11 @@
           
           
 
+          
+
+          
+
+          <br>
           
 
           
@@ -462,6 +453,7 @@
 <h2 id="契机"><a href="#契机" class="headerlink" title="契机"></a>契机</h2><p>最开始是阿里云搞促销，搞了个服务器，搞了个三年的云服务器。然后就是在业余时间开始了无休止的没日没夜的折腾。期间有过想要分享自己的折腾经历，但后来发现基本上自己的了解仍未超越现有博客的内容，觉得还是不要重复造没意义的轮子吧。但这也让我想起了这个布满了蜘蛛丝的博客。也就顺水推舟了。希望这次能摘掉拖延症的帽子吧。</p>
 <h2 id="搭建的折腾"><a href="#搭建的折腾" class="headerlink" title="搭建的折腾"></a>搭建的折腾</h2><p>年轻时候不论做什么事都喜欢自己撸代码亲力亲为，现在老大了反倒是各种拿来主义拿来得各种得心应手出神入化。<br>先是匆匆忙忙地把原来弄到一半的 jekyll 版快速快速收尾并tag存档，然后换成hexo重新上路。<br>fork 了一份 next 主题的源码，放到 themes下作为 <strong>submodule</strong> 就开始折腾，选了 Mist 的 scheme。科技感满满。换了头像、LOGO匆匆忙忙地写了这篇吐槽就匆匆忙忙上线了。<br>比起 jekyll 还得好好学一学Ruby的语法，还是hexo只要掌握好js相关技术栈容易搞定。而且hexo生成的静态页想要迁移的话比起再搭建一次GitHub Pages环境要简单得多。按照主流的来，拥抱变化吧。<br>想起当年玩博客园时候，就是自己弄了一套皮肤后，虎头蛇尾就没怎更新了。当年还是得兼容IE6的苦逼岁月呢。<br>来到这里，当然还是国际惯例，通过 robots.txt  禁止掉了所有的搜索引擎。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">User-agent: *</span><br><span class="line">Disallow: /</span><br></pre></td></tr></table></figure>
+
 <h2 id="内容定位"><a href="#内容定位" class="headerlink" title="内容定位"></a>内容定位</h2><p>现在要搭建一个网站可谓说是非常简单了，现有的框架一大堆，一大堆，各种便宜到难以置信的云服务。倒是备案有多麻烦我是见识到了。所以搭建也花太多时间，但内容就真的是得慢慢地爬键盘了。<br>果然做技术的，还是要弄技术博客啊，但我这种没啥子技术的人，又何来技术博客一说？就像是没有鸡何来蛋一样。感觉好像弄博客内容，我倒是比起做内容，我倒是更热衷于折腾博客的代码本身。<br>但还是大致想了想自己要分享，该分享什么内容吧。</p>
 <ul>
 <li>项目说明。没有怎么更新GitHub，但其实也是一直从事开发的工作呢。倒是在U盘里建了个svn私有仓库(嗯，你们眼中的Low SVN，实际上是工作在用，也就一个人在不同电脑写代码，没必要用GIT)，好像自己一直没多开放的习惯。看看要不要把私仓的东西放出来。</li>
@@ -474,6 +466,8 @@
         
       
     </div>
+
+    
 
     
 
@@ -531,7 +525,6 @@
   </div>
 
   <aside id="sidebar" class="sidebar">
-    
     <div class="sidebar-inner">
 
       
@@ -540,118 +533,123 @@
 
       <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
+
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-            
-              <img class="site-author-image" itemprop="image" src="/images/avata_468.jpg" alt="Nieg">
-            
-              <p class="site-author-name" itemprop="name">Nieg</p>
-              <p class="site-description motion-element" itemprop="description"></p>
-          </div>
+  
+    <img class="site-author-image" itemprop="image" src="/images/avata_468.jpg" alt="Nieg">
+  
+  <p class="site-author-name" itemprop="name">Nieg</p>
+  <div class="site-description motion-element" itemprop="description"></div>
+</div>
+
+
+  <nav class="site-state motion-element">
+    
+      <div class="site-state-item site-state-posts">
+        
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+    
+
+    
+      
+      
+      <div class="site-state-item site-state-categories">
+        
+          
+            <a href="/categories/">
+          
+        
+        
+        
+          
+        
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span>
+        </a>
+      </div>
+    
+
+    
+      
+      
+      <div class="site-state-item site-state-tags">
+        
+          
+            <a href="/tags/">
+          
+        
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">标签</span>
+        </a>
+      </div>
+    
+  </nav>
+
+
+
+  <div class="feed-link motion-element">
+    <a href="/atom.xml" rel="alternate">
+      <i class="fa fa-rss"></i>RSS
+    </a>
+  </div>
+
+
+
+
+
+  <div class="links-of-author motion-element">
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="https://github.com/Nieg" title="GitHub &rarr; https://github.com/Nieg" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+    
+      <span class="links-of-author-item">
+      
+      
+        
+      
+      
+        
+      
+        <a href="mailto:xp_fei@163.com" title="E-Mail &rarr; mailto:xp_fei@163.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+    
+  </div>
+
+
+
+
+
+
 
           
-            <nav class="site-state motion-element">
-              
-                <div class="site-state-item site-state-posts">
-                
-                  <a href="/archives/">
-                
-                    <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">日志</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-categories">
-                  <a href="/categories/">
-                  
-                    
-                    
-                      
-                    
-                    <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">分类</span>
-                  </a>
-                </div>
-              
-
-              
-                
-                
-                <div class="site-state-item site-state-tags">
-                  <a href="/tags/">
-                  
-                    
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">1</span>
-                    <span class="site-state-item-name">标签</span>
-                  </a>
-                </div>
-              
-            </nav>
           
-
-          
-            <div class="feed-link motion-element">
-              <a href="/atom.xml" rel="alternate">
-                <i class="fa fa-rss"></i>
-                RSS
-              </a>
-            </div>
-          
-
-          
-            <div class="links-of-author motion-element">
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="https://github.com/Nieg" title="GitHub &rarr; https://github.com/Nieg" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
-                </span>
-              
-                <span class="links-of-author-item">
-                  
-                  
-                    
-                  
-                  
-                    
-                  
-                  <a href="mailto:xp_fei@163.com" title="E-Mail &rarr; mailto:xp_fei@163.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
-                </span>
-              
-            </div>
-          
-
-          
-
-          
-          
-
-          
-            
-          
-          
-
         </div>
       </div>
 
@@ -661,6 +659,7 @@
 
     </div>
   </aside>
+  <div id="sidebar-dimmer"></div>
 
 
         
@@ -681,7 +680,7 @@
 </div>
 
 
-  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.8.0</div>
+  <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
 
 
 
@@ -689,7 +688,7 @@
 
 
 
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.0.0</div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.2.0</div>
 
 
 
@@ -719,6 +718,7 @@
     
 
     
+
   </div>
 
   
@@ -744,8 +744,6 @@
 
 
 
-
-
   
   
 
@@ -758,7 +756,7 @@
 
 
   
-  <script src="/lib/jquery/index.js?v=2.1.3"></script>
+  <script src="/lib/jquery/index.js?v=3.4.1"></script>
 
   
   <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
@@ -766,19 +764,12 @@
   
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
 
-  
-  <script src="/lib/three/three.min.js"></script>
-
-  
-  <script src="/lib/three/canvas_lines.min.js"></script>
 
 
-  
 
+  <script src="/js/utils.js?v=7.2.0"></script>
 
-  <script src="/js/src/utils.js?v=7.0.0"></script>
-
-  <script src="/js/src/motion.js?v=7.0.0"></script>
+  <script src="/js/motion.js?v=7.2.0"></script>
 
 
 
@@ -786,28 +777,14 @@
   
 
 
-  <script src="/js/src/schemes/muse.js?v=7.0.0"></script>
+  <script src="/js/schemes/muse.js?v=7.2.0"></script>
 
 
 
 
   
 
-  
-
-
-  <script src="/js/src/bootstrap.js?v=7.0.0"></script>
-
-
-
-  
-
-
-
-  
-
-
-
+  <script src="/js/next-boot.js?v=7.2.0"></script>
 
   
 
@@ -815,23 +792,57 @@
 
   
 
-  
 
   
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+// GET RESPONSIVE HEIGHT PASSED FROM IFRAME
+
+window.addEventListener("message", function(e) {
+  var data = e.data;
+  if ((typeof data === 'string') && (data.indexOf('ciu_embed') > -1)) {
+    var featureID = data.split(':')[1];
+    var height = data.split(':')[2];
+    $(`iframe[data-feature=${featureID}]`).height(parseInt(height) + 30);
+  }
+}, false);
+</script>
+
+
+
+
+
+
+
 
   
 
